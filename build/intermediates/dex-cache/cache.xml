@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_eede0620c56c7260c6c6022e988233570fd75e7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha4/constraint-layout-solver-1.0.0-alpha4.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="cdeb2aecf7557aa5f8d2ac0e37a0e7760f48c513">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.0-alpha4_9a8c2cbd0d4cecd963a689d961dc98ebf4b85bfd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.0.1_23968cd03e880445fc54c6997a27260699442ea9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_c1ff191ea508ddeb9f681d7cea83d70f69f0cc05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha4/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="2a25fdd20d5f75558b6011724bbfbb7d97c7f5b7">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/com.android.support.constraint-constraint-layout-1.0.0-alpha4_d1f7528a88ca984be0cbc0818ff41fae387f15fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_e3c4641b68ab7ad30505c471a5f67544a909e115.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_78cd6f1cf77469d16e6cba8399f8957232d32a6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_d848100bc3f403a99fc72d93b1c871eb1580b6ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wangxiandeng/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/wangxiandeng/Documents/我的编程/Android/CaptainPullToRefrersh/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_cd68cdd64af96d787e27028743c143cea30605b3.jar" />
+    </item>
+
+</items>
