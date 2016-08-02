@@ -9,5 +9,5 @@ import android.support.v7.widget.RecyclerView;
 public interface IPullToRefresh {
     RecyclerView getRefreshRecyclerView();
 
-    void setRefreshListener(IRefreshListener listener);
+    void setOnRefreshListener(OnRefreshListener listener);
 }

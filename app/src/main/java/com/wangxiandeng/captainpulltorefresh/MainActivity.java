@@ -1,5 +1,6 @@
 package com.wangxiandeng.captainpulltorefresh;
 
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -27,5 +28,16 @@ public class MainActivity extends AppCompatActivity {
         }
         mAdapter = new MyAdapter(this, list);
         mRecyclerView.setAdapter(mAdapter);
+        mPullRecyclerView.setOnRefreshListener(new OnRefreshListener() {
+            @Override
+            public void refreshing() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mPullRecyclerView.finsihRefreshing();
+                    }
+                }, 1000);
+            }
+        });
     }
 }
