@@ -130,26 +130,21 @@ public class PullToRefreshRecyclerView extends LinearLayout implements IPullToRe
                             return super.dispatchTouchEvent(event);
                         }
                         if ((-mDs) < REFRESH_LIMIT_HEIGHT) {
-                            mCurrentMode = PULL_TO_REFRESH;
-                            mHeaderView.setHeaderText("pull to refresh");
+                            updateMode(PULL_TO_REFRESH);
                         } else {
-                            mCurrentMode = RELEASE_TO_REFRESH;
-                            mHeaderView.setHeaderText("release to refresh");
+                            updateMode(RELEASE_TO_REFRESH);
                         }
                         startPull(y - mLastY);
                     } else {
                         if (mCurrentMode != NORMAL) {
                             startPull(y - mLastY);
                             if ((-mDs) >= REFRESH_LIMIT_HEIGHT) {
-                                mCurrentMode = RELEASE_TO_REFRESH;
-                                mHeaderView.setHeaderText("release to refresh");
+                                updateMode(RELEASE_TO_REFRESH);
                             } else if ((-mDs) < REFRESH_LIMIT_HEIGHT && (-mDs) > 0) {
-                                mCurrentMode = PULL_TO_REFRESH;
-                                mHeaderView.setHeaderText("pull to refresh");
-
+                                updateMode(PULL_TO_REFRESH);
                             } else {
                                 mDs = 0;
-                                mCurrentMode = NORMAL;
+                                updateMode(NORMAL);
                             }
                         }
                     }
@@ -165,6 +160,23 @@ public class PullToRefreshRecyclerView extends LinearLayout implements IPullToRe
 
         return super.dispatchTouchEvent(event);
 
+    }
+
+    private void updateMode(int mode) {
+        mCurrentMode = mode;
+        switch (mCurrentMode) {
+            case RELEASE_TO_REFRESH:
+                mHeaderView.setHeaderText("release to refresh");
+                break;
+            case PULL_TO_REFRESH:
+                mHeaderView.setHeaderText("pull to refresh");
+                break;
+            case REFRESHING:
+                mHeaderView.setHeaderText("refreshing....");
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
@@ -208,7 +220,7 @@ public class PullToRefreshRecyclerView extends LinearLayout implements IPullToRe
                     mDs = (int) (mDs * (1 - fraction));
                     scrollTo(0, mDs);
                     if (mDs == 0) {
-                        mCurrentMode = NORMAL;
+                        updateMode(NORMAL);
                     }
                 } else if (mCurrentMode == RELEASE_TO_REFRESH) {
                     if ((-mDs) > REFRESH_LIMIT_HEIGHT) {
@@ -227,8 +239,7 @@ public class PullToRefreshRecyclerView extends LinearLayout implements IPullToRe
     }
 
     private void refreshing() {//执行刷新
-        mCurrentMode = REFRESHING;
-        mHeaderView.setHeaderText("refreshing....");
+        updateMode(REFRESHING);
         if (mRefreshListener != null) {
             mRefreshListener.refreshing();
         }

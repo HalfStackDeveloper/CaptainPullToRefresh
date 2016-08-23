@@ -1,6 +1,7 @@
 package com.wangxiandeng.captainpulltorefresh;
 
 import android.os.Handler;
+import android.renderscript.Sampler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = mPullRecyclerView.getRefreshRecyclerView();
         //设置布局管理器
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        List<String> list = new ArrayList<>();
+        final List<String> list = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             list.add("" + i);
         }
@@ -34,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
+                        for (int i = 0; i < 20; i++) {
+                            list.set(i, "" + (Integer.valueOf(list.get(i)) + 1));
+                        }
+                        mAdapter.notifyDataSetChanged();
                         mPullRecyclerView.finsihRefreshing();
                     }
                 }, 1000);
